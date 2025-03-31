@@ -1,69 +1,86 @@
 # CorneaDeSci
 
-<img src="assets/logo.svg" width="200" height="200" alt="CorneaDeSci Logo" style="display: block; margin: 0 auto;">
+A decentralized corneal health research platform built with Rust and blockchain technology.
 
-## Decentralized Corneal Health Research Platform
+## Overview
 
-CorneaDeSci is an open-source platform that combines blockchain technology with ophthalmology research to create a decentralized ecosystem for corneal health data management and research collaboration.
+CorneaDeSci is a decentralized platform that enables researchers and healthcare providers to collaborate on corneal health research. The platform provides secure data sharing, research collaboration tools, and blockchain-based verification of research findings.
 
-> Note: This codebase is maintained in English to ensure global accessibility and collaboration.
+## Features
 
-### Key Features
+- Decentralized data storage and sharing
+- Blockchain-based research verification
+- Secure authentication and authorization
+- Research collaboration tools
+- Data analysis and visualization
+- API for third-party integrations
 
-- **Secure Data Management**: Store and manage corneal health data with blockchain-based security
-- **Research Collaboration**: Connect researchers, clinicians, and patients in a decentralized network
-- **Token Economy**: Incentivize participation and data sharing through a transparent token system
-- **Smart Contracts**: Automate research agreements and data usage permissions
-- **Patient Control**: Give patients sovereignty over their health data
+## Technology Stack
 
-### Technology Stack
+- Backend: Rust
+- Database: PostgreSQL
+- Blockchain: Substrate
+- Authentication: JWT
+- API: RESTful
 
-- Rust backend with Actix-web framework
-- Ethereum blockchain integration
-- PostgreSQL database for structured data
-- IPFS for decentralized storage
-- Web3 connectivity
+## Getting Started
 
-### Getting Started
+### Prerequisites
 
+- Rust 1.70 or later
+- PostgreSQL 14 or later
+- Node.js 18 or later (for frontend)
+
+### Installation
+
+1. Clone the repository:
 ```bash
-# Clone the repository
 git clone https://github.com/CorneaDeSci/CorneaDeSci.git
 cd CorneaDeSci
+```
 
-# Install dependencies
+2. Install dependencies:
+```bash
 cargo build
+```
 
-# Run the development server
+3. Set up the database:
+```bash
+cargo run --bin migrate
+```
+
+4. Start the server:
+```bash
 cargo run
 ```
 
-### Project Structure
+## Project Structure
 
 ```
-CorneaDeSci/
-├── src/              # Source code
-│   ├── api/          # API endpoints
-│   ├── blockchain/   # Blockchain integration
-│   ├── database/     # Database models and connections
-│   ├── services/     # Business logic services
-│   ├── config.rs     # Configuration management
-│   ├── error.rs      # Error handling
-│   ├── lib.rs        # Library exports
-│   └── main.rs       # Application entry point
-├── migrations/       # Database migrations
+cornea_new/
+├── src/
+│   ├── api/           # API endpoints and handlers
+│   ├── blockchain/    # Blockchain integration
+│   ├── database/      # Database models and migrations
+│   ├── services/      # Business logic
+│   └── utils/         # Utility functions
 ├── assets/           # Static assets
-└── Cargo.toml        # Project dependencies
+├── migrations/       # Database migrations
+└── tests/           # Test files
 ```
 
-### Contributing
+## Contributing
 
-We welcome contributions from developers, researchers, and healthcare professionals.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
 
-### License
+## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-### Contact
+## Contact
 
-For more information, reach out to us at info@corneadesci.io
+For any questions or concerns, please open an issue in the GitHub repository.

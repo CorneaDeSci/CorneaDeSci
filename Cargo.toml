@@ -1,24 +1,30 @@
 [package]
-name = "corneadesci"
+name = "cornea-desci"
 version = "0.1.0"
 edition = "2021"
 authors = ["CorneaDeSci Team"]
-description = "Decentralized Corneal Health Research Platform"
+description = "A decentralized corneal health research platform"
+license = "MIT"
 
 [dependencies]
 # Core dependencies
-tokio = { version = "1.28.0", features = ["full"] }
-actix-web = "4.3.1"
-serde = { version = "1.0.163", features = ["derive"] }
-serde_json = "1.0.96"
-log = "0.4.17"
-env_logger = "0.10.0"
+tokio = { version = "1.0", features = ["full"] }
+actix-web = "4.4"
+actix-cors = "0.6"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+log = "0.4"
+env_logger = "0.10"
 dotenv = "0.15.0"
-thiserror = "1.0.40"
+thiserror = "1.0"
 once_cell = "1.17.1"
+derive_more = "0.99"
+anyhow = "1.0"
+futures = "0.3"
+async-trait = "0.1"
 
 # Database
-sqlx = { version = "0.6.3", features = ["runtime-actix-native-tls", "postgres", "chrono", "uuid", "json"] }
+sqlx = { version = "0.7", features = ["runtime-tokio-rustls", "postgres", "chrono"] }
 
 # Blockchain integration
 ethers = "2.0.4"
@@ -27,12 +33,12 @@ tiny-keccak = { version = "2.0", features = ["keccak"] }
 hex = "0.4.3"
 
 # Authentication
-jsonwebtoken = "8.3.0"
-bcrypt = "0.14.0"
+jsonwebtoken = "9.1"
+bcrypt = "0.15"
 rand = "0.8.5"
 
 # Data processing
-chrono = { version = "0.4.24", features = ["serde"] }
+chrono = { version = "0.4", features = ["serde"] }
 uuid = { version = "1.3.3", features = ["v4", "serde"] }
 
 [lib]
