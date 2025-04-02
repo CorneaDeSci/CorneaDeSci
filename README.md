@@ -4,6 +4,18 @@
   <img src="https://raw.githubusercontent.com/CorneaDeSci/CorneaDeSci/main/assets/logo.jpg" width="300" height="300" alt="CorneaDeSci Logo">
 </div>
 
+<div align="center">
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Rust](https://img.shields.io/badge/Rust-1.70%2B-orange.svg)](https://www.rust-lang.org)
+[![GitHub issues](https://img.shields.io/github/issues/CorneaDeSci/CorneaDeSci)](https://github.com/CorneaDeSci/CorneaDeSci/issues)
+[![GitHub stars](https://img.shields.io/github/stars/CorneaDeSci/CorneaDeSci)](https://github.com/CorneaDeSci/CorneaDeSci/stargazers)
+[![Build Status](https://img.shields.io/github/workflow/status/CorneaDeSci/CorneaDeSci/CI)](https://github.com/CorneaDeSci/CorneaDeSci/actions)
+[![Documentation](https://img.shields.io/badge/docs-latest-blue.svg)](https://corneadesci.github.io/docs)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/CorneaDeSci/CorneaDeSci/pulls)
+
+</div>
+
 A decentralized corneal health research platform built with Rust and blockchain technology.
 
 ## Overview
