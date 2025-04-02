@@ -1,7 +1,7 @@
 # CorneaDeSci
 
 <div align="center">
-  <img src="assets/logo.jpg" width="300" height="300" alt="CorneaDeSci Logo">
+  <img src="https://raw.githubusercontent.com/CorneaDeSci/CorneaDeSci/main/assets/logo.jpg" width="300" height="300" alt="CorneaDeSci Logo">
 </div>
 
 A decentralized corneal health research platform built with Rust and blockchain technology.
